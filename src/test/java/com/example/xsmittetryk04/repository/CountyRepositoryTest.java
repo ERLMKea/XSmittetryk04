@@ -14,17 +14,15 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@SpringBootTest
 class CountyRepositoryTest {
-
-    @Autowired
-    RegionRepository regionRepository;
 
     @Test
     void testFunc() {
         //List<Region> regions = regionRepository.findAll();
         //Assertions.assertEquals(3, counties.size());
         Integer i1 = 5;
-        Assertions.assertEquals(true, i1 > 4);
+        Assertions.assertEquals(true, i1 > 3);
     }
 
 }
